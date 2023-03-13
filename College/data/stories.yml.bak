@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+
+- story: start path 1 
+  steps:
+  - intent: meeting
+  - action: utter_ask_course
+  - intent: study_field  
+  - action: utter_ask_college
+  - intent: college
+  - action: utter_study_why
+  - intent: study_field_why 
+  - action: utter_memory
+  - intent: memory
+  - action: utter_group
+  - intent: group
+  - action: utter_ask_trip
+  - intent: college_trip
+  - action: utter_ambition
+  - intent: ambition
+  - action: utter_bye
+  
+
+
+- story: extra 1
+  steps:
+  - intent: ask_name 
+  - action: utter_ask_name
+  - intent: ask_howold
+  - action: utter_ask_howold
+  - intent: study_field
+  - action: utter_ask_college
+
+

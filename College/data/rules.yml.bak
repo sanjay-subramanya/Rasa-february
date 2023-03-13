@@ -1,0 +1,116 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet the user
+  conversation_start: True
+  steps:
+  - intent: meeting
+  - action: action_flush_slots
+  - action: action_greet_user
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_say_bye  
+  - action: action_flush_slots
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# - rule: Change the topic of conversation
+  # steps:
+  # - intent: change_topic
+  # - action: utter_change
+
+- rule: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+# - rule: say name
+  # steps:
+  # - action: action_greet_user
+  # - intent: name
+  # - action: action_say_name
+
+- rule: deny 2
+  steps:
+  - action: utter_bikes_int
+  - intent: bikes_deny
+  - action: utter_sport_int
+  
+- rule: age
+  steps:  
+  - action: action_say_name
+  - intent: place  
+  - action: utter_ask_age
+  
+- rule: job
+  steps:  
+  - action: utter_ask_age
+  - intent: age
+  - action: utter_ask_job
+  
+- rule: hobby
+  steps:  
+  - action: utter_ask_job
+  - intent: job 
+  - action: utter_ask_hobbies
+  
+- rule: family
+  steps:  
+  - action: utter_ask_hobbies
+  - intent: hobbies
+  - action: utter_family_1
+ 
+- rule: start topic
+  steps:  
+  - action: utter_family_1
+  - intent: family_intro
+  - action: utter_bikes_int
+
+- rule: bikes 1
+  steps:  
+  - action: utter_bikes_power
+  - intent: dream_bike_power
+  - action: utter_bikes_price
+  
+- rule: bikes 2
+  steps:  
+  - action: utter_bikes_price
+  - intent: dream_bike_cost
+  - action: utter_bikes_bye
+  - action: action_flush_slots
+ 
+- rule: sport
+  steps:  
+  - action: utter_bikes_int
+  - intent: bikes_deny
+  - action: utter_sport_int
+
+- rule: food
+  steps: 
+  - action: utter_sport_int
+  - intent: sport_deny
+  - action: action_say_place_food
+  
+- rule: fav food 1
+  steps: 
+  - action: action_say_place_food 
+  - intent: fav_food
+  - action: utter_food_ingredients
+  
+- rule: fav food 2
+  steps: 
+  - action: utter_food_ingredients
+  - intent: food_ingr
+  - action: utter_food_freq
+  
+- rule: sport fav
+  steps: 
+  - action: action_say_sport
+  - intent: sport_fav_player
+  - action: action_say_player

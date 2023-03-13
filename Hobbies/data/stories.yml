@@ -1,0 +1,40 @@
+version: "3.1"
+
+stories:
+
+- story: start path 1 
+  steps:
+  - intent: meeting
+  - action: utter_ask_movie
+  - intent: movie  
+  - action: utter_fav_movie
+  - intent: fav_movie
+  - action: utter_ask_actor
+  - intent: actor 
+  - action: utter_ask_song
+  - intent: songs
+  - action: utter_singer
+  - intent: singer
+  - action: utter_ask_hobbies
+  - intent: hobbies
+  - action: utter_sport_int
+  - intent: choose_sport  
+  - action: utter_player
+  - intent: sport_fav_player
+  - action: utter_fav_food
+  - intent: fav_food 
+  - action: utter_food_freq
+  - intent: food_freq
+  - action: utter_food_bye 
+  
+
+- story: extra 1
+  steps:
+  - intent: ask_name 
+  - action: utter_ask_name
+  - intent: ask_howold
+  - action: utter_ask_howold
+  - intent: choose_sport
+  - action: action_say_player
+
+

@@ -1,0 +1,52 @@
+version: '3.4'
+services:
+
+  l2-banking-base:
+    image: python:3.8
+    working_dir: /app
+    build: "./"
+    restart: always
+    command: bash -c "python l2-banking.py"
+    ports:
+    - '5000:5000'
+    networks:
+    - all
+
+  l2-hospitality-base:
+    image: python:3.8
+    working_dir: /app
+    build: "./"
+    restart: always
+    command: bash -c "python l2-hospitality.py"
+    ports:
+    - '6000:6000'
+    networks:
+    - all
+
+  l2-travel-base:
+    image: python:3.8
+    working_dir: /app
+    build: "./"
+    restart: always
+    command: bash -c "python l2-travel.py"
+    ports:
+    - '7000:7000'
+    networks:
+    - all
+
+  translation-base:
+    image: python:3.8
+    working_dir: /app
+    build: "./"
+    restart: always
+    command: bash -c "python trans.py"
+    ports:
+    - '4000:4000'
+    networks:
+    - all
+
+networks:
+  all:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"

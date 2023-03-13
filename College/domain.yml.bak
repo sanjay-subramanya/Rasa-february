@@ -1,0 +1,110 @@
+version: "3.1"
+
+intents:
+  - study_field
+  - study_field_why
+  - college
+  - college_trip
+  - memory
+  - ambition
+  - group
+  - out_of_scope
+  - ask_name
+  - ask_howold
+  - meeting
+  - goodbye
+  - bot_challenge
+
+entities:
+  - domain
+  - study_reason
+  - college
+  - trip_dest
+  - memory
+  - ambition
+    
+# slots:
+  # name:
+    # type: text
+    # influence_conversation: false
+    # mappings:
+    # - type: from_entity
+      # entity: name
+  # place:
+    # type: text
+    # influence_conversation: false
+    # mappings:
+    # - type: from_entity
+      # entity: place
+  # sport:
+    # type: text
+    # influence_conversation: false
+    # mappings:
+    # - type: from_entity
+      # entity: sport 
+  # player:
+    # type: text
+    # influence_conversation: false
+    # mappings:
+    # - type: from_entity
+      # entity: player   
+
+  
+responses:
+  
+  utter_ask_course:
+  - text: "Which course are you studying? !Q@W#D I am styding B.Tech in Computer Science"
+  
+  utter_ask_college:
+  - text: "And which college are you going to? !Q@W#D I am going to Madras University"
+  
+  utter_study_why:
+  - text: "I'm curious, Why did you select that course? !Q@W#D I selected this course as I have always been interested in computer science"
+  
+  utter_memory:
+  - text: "What is your happiest memory from college? !Q@W#D My happiest memory is when I won the gold medal for best student"
+  
+  utter_group:
+  - text: "Have you been a part of any group projects or events? !Q@W#D Yes, I was a part of the group for the hackathon"
+  
+  utter_ask_trip:
+  - text: "Did you go for any college trips or industrial visits? !Q@W#D During our 2nd year, we went for an industrial visit to an IT company."
+   
+  utter_ambition:
+  - text: "What are your ambitions for the future ? !Q@W#D  I do not plan to study any other courses right now as I want to gain some work experience first"  
+  
+  utter_ask_howold:
+  - text: "Young enough to be a bot! !Q@W#D ."
+  - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter. !Q@W#D ."
+  - text: "My first git commit was many years ago. !Q@W#D ."
+  - text: "I have hit the age where I actively try to forget how old I am. !Q@W#D ."
+ 
+  utter_ask_name:
+  - text: "I'm Jay, the soft skills trainer ! !Q@W#D ."
+  - text: "My name is Jay! I am a soft skills coach! !Q@W#D ."
+ 
+  utter_iamabot:
+  - text: "I am a chatbot, who loves talking to people and making new friends. !Q@W#D ."
+  
+  utter_out_of_scope:
+  - text: "I can't help you with that, I'm sorry. !Q@W#D ."
+  - text: "I can't understand what you are trying to say. !Q@W#D ."
+  
+  utter_bye:
+  - text: "It was great talking to you. Thank you for your time, goodbye! !Q@W#D ."
+  - text: "It was an awesome conversation. See you later. Bye! !Q@W#D ."
+  - text: "It felt great talking to you. Lets catch up some time soon! !Q@W#D ."
+
+# actions:
+  # - action_greet_user
+  # - action_say_player
+  # - action_say_place_food
+  # - action_say_foodbringbye
+  # - action_say_sportagreebye
+  # - action_say_sport
+  # - action_say_bye
+  # - action_flush_slots
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true 

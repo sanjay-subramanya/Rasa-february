@@ -1,0 +1,389 @@
+version: "3.1"
+
+nlu:
+
+- intent: movie
+  examples: |
+    - Yes, I enjoy watching movies and TV shows.
+    - Sometimes I watch movies or TV shows, depending on my schedule.
+    - Absolutely, I'm a big fan of movies and TV series.
+    - I watch movies and TV shows when I have some free time.
+    - Yes, I like to catch up on my favorite shows and movies.
+    - I do watch movies and TV shows, but not too often.
+    - Of course, I love watching movies and binge-watching TV series.
+    - Yes, I regularly watch movies and TV shows for entertainment.
+    - I watch movies and TV shows occasionally.
+    - yes, I enjoy a good movie or TV show every now and then.
+    - only sometimes
+    - Yes, I like watching movies in the theater and on OTT platforms
+    - very few ones
+    - not really, I am not much interested in them
+    - No I don't watch them
+    - Yes, I like watching movies in the theater and on OTT platforms
+    - I only watch english movies but not other ones
+
+- intent: fav_movie
+  examples: |
+    - [Edge of Tomorrow and Predestination](movie) always hold special place in my heart
+    - My favourite movie has to be [love mocktail](movie)
+    - Many many favourites
+    - There are so many movies I like, it is impossible to name a few favourites.
+    - [Romantic and chick flicks](movie) are my favourite kind of movies
+    - Too many, I dont know to say one or two
+    - I not watching many movies
+    - I seeing this movie so many time, it is my favourite
+    - I favourite movies is [double dhamaal](movie)
+    - I have seen [double dhamaal](movie) many number of times
+    - I saw [double dhamaal](movie) so many times
+    - [the amazing spider man](movie)
+    - I dont have one favourite movie but I enjoy watching
+    - [Any action or horror movie](movie)
+    - my all time favourite movie is [dia](movie)
+    - I love [incredible hulk](movie). i have seen it so many times since chilhood.
+    - My most watched and followed movie is [amazing spider man 4](movie)
+    - whenever I am bored I watch [the amazing spider man 4](movie). It always cheers me up.
+    
+- intent: actor
+  examples: |
+    - My favorite actor is [Tom Hanks](actor). I love his range and ability to bring authenticity to every role.
+    - Without a doubt, my favorite actor is [Meryl Streep](actor). She's a true chameleon and always gives a captivating performance.
+    - I have a soft spot for [Leonardo DiCaprio](actor). He's been a favorite of mine since his Titanic days and continues to impress me with his work.
+    - I'm a big fan of [Daniel Day-Lewis](actor). His commitment to every character he portrays is simply amazing.
+    - I really admire [Viola Davis](actor) as an actor. She brings so much depth and emotion to every role she takes on.
+    - My favorite actor is [Anthony Hopkins](actor). He's a master of his craft and always commands the screen.
+    - I really enjoy watching Joaquin Phoenix on screen. He's such a versatile actor and always delivers something unexpected.
+    - My favourite actor is [Rajkumar](actor)
+    - My all time favourite actor is [Shahid kapoor](actor)
+    - I am a die hard fan of [Hrithik roshan](actor)
+    - I big fan of [rajnikanth](actor)
+    
+- intent: songs
+  examples: | 
+    - I listen to a lot of [pop and rock](genre).
+    - Mostly [pop, sometime hip-hop](genre) too.
+    - love [classical](genre), sooth my mind.
+    - [Metal, rock and alternative](genre) what I like.
+    - [Jazz](genre), it's so cool.
+    - i like songs
+    - i listen to song
+    - Yes, I like listening to songs
+    - Yes, I listen a lot of songs
+    - Yeah, I like listening to songs
+    - I love listening to songs
+    - No I don't like music
+    - I really do not listen much to music
+    - A few good songs occasionally
+    - [pop and rock](genre)
+    - I listen to music
+    - [Country music](genre) take me to another place.
+    - [R&B, soulful music](genre).
+
+- intent: singer
+  examples: |
+    - I love [Kaleo](artist). He is one of my favorite artist.
+    - What is meaning of word genre
+    - I liking [Arjun Janya](artist) sir
+    - My favorite artist [Arijith Singh](artist)
+    - [Rafi](artist)
+    - I love listening to [Arijith Singh](artist)
+    - I am a big fan of [Arijith Singh](artist)
+    - My favourite artists are [Deep Purple and Linkin Park](artist).
+    - I have many favourite artists
+    - I spend a lot of my time listening to [Arijith Singh](artist)
+    - I have been following the work of [Arijith Singh](artist) for a  long while
+    - I have so many artists who are my favourite, I simply cannot name one favourite.
+    - [Vishal](artist) is my favorite artist
+    - I loving [Sunidhi Chauhan and Shreya Ghosal madam](artist)
+    - I always listening [Illayaraja](artist) songs
+    - My favourite artist is [Gaana Sudhakar](artist)
+    - There are many, my favourite is [Shankar](artist)
+    - Artist favourite for me is [Lata Mangeshkar](artist)
+
+- intent: hobbies
+  examples: |
+    - My hobbies and interests include [painting and singing](hobbies)
+    - some of my hobbies are [painting, dance and singing](hobbies)
+    - [painting and singing](hobbies) are a few of my hobbies
+    - [art, music and yoga](hobbies)
+    - my hobbies and interests are [painting and singing](hobbies)
+    - [painting and singing](hobbies) are some of my favourite hobbies
+    - my hobbies include [painting and singing](hobbies)
+    - my hobbie comprise of [painting and singing](hobbies)
+    - my hobbies constitute [painting and singing](hobbies)
+    - some of my hobbies are [painting and singing](hobbies)
+    - my hobbies are [photo taking and dancing](hobbies)
+    - I usually take part in [art, music and yoga workshops](hobbies)
+    - my main hobby is [stamp collection](hobbies)
+    - my primary interest is [world geography](hobbies)
+    - they are [art, music and yoga](hobbies)
+    - my hobby is [playing drums](hobbies)
+    - I play [sports, cricket and kabaddi](hobbies)
+    - no hobbies
+    - I don't have hobbies
+    - me no have any hobby
+    - I [play drums and compose music](hobbies)
+    - [drums, singing and rock climbing](hobbies) 
+    - I do [sports, music and planning](hobbies)
+    - they include [art, music and yoga](hobbies)
+    - I [organize and take part in magic](hobbies)
+    - my hobbies are [photgraphy and painting](hobbies)
+    - my passtimes and interests are [singing and music](hobbies)
+    - my interests include [singing and music and horseriding](hobbies)
+    - I love [all art forms](hobbies) and spend my time in that
+    - [rock climbing and horse riding](hobbies)
+    - my interests and hobbies are [photography and art](hobbies)
+
+
+- intent: choose_sport 
+  examples: |
+    - yes i like [football](sport)
+    - yeah of course i like [hockey and table tennis](sport)
+    - i enjoy playing and watching [cricket](sport)
+    - oh I love [football](sport)
+    - I enjoy watching [tennis](sport)
+    - [cricket](sport)
+    - [field hockey](sport) is my favourite sport
+    - lets talk about [football](sport)
+    - I like [karate](sport)
+    - I am champion at [badminton](sport) 
+    - okay, i want to talk about [football](sport)
+    - my favourite sport is [soccer](sport)
+    - i want to chat about [karate](sport)
+    - i am a big fan of [badminton](sport)
+    - i choose [competetive chess](sport)
+    - I play [table tennis](sport) a lot
+ 
+- intent: sport_fav_player
+  examples: |
+    - Yeah, i am big fan of [Kohli](player)
+    - [Kohli](player) is my biggest inspiration. i am a fan of his.
+    - i love watching [somenameguy](player) play
+    - [virat kohli](player)
+    - my favourite [virat kohli](player)
+    - it is [david warner](player)
+    - my favourite player is [dhoni](player)
+    - [warner](player) hands down
+    - [warner](player) big fan
+    - [roger federer](player) favourite
+    - [Kohli](player) is the best in my opinion
+    - i'm a big fan of [david beckham](player)
+ 
+    
+- intent: fav_food
+  examples: |
+    - my favourite food is [gulab jamun](dish)
+    - i love eating [dosa](dish)
+    - I like [ice cream](dish)
+    - [noodles](dish)
+    - my favourite dish is [vxcvpbfsw](dish)   
+    - i love having [special thali](dish)
+    - [noodles and other Asian dishes](dish) is my favorite thing now
+    - [pizza](dish) is my favourite
+    - i love [abcd](dish) items here
+    - The most famous food in [new york](place) would be [pizza](dish)
+    - [pizza and burger](dish) are famous here
+    - The famous foods here are [noodles and dumplings](dish)
+    - The most iconic and popular food here is [dosa](dish)
+    - I would say that [noodles and dumplings](dish) are popular here in [singapore](place)
+    - i love [abcdef](dish) cuisine
+    - [Japanese and Italian](dish) cuisine and food dishes are the best
+
+    
+- intent:  food_freq
+  examples: | 
+    - I have [burger](famous_food) [twice a week](famous_food_freq)
+    - about [twice a week](famous_food_freq) i would say
+    - almost [once in a month](famous_food_freq)
+    - I eat [curry](famous_food) [every day for dinner](famous_food_freq) without skipping
+    - i eat it [almost twice a year](famous_food_freq) 
+    - [everyday](famous_food_freq) I have
+    - I have it [everyday](famous_food_freq)
+
+
+
+- intent: goodbye
+  examples: |
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a real person?
+    - are you real person or chat bot?
+    - So I'm here Today to ask one very simple question, what are you ?
+    - you sound like a real human
+    - wow you sound like real human
+    - are you human ?
+
+
+- intent: out_of_scope
+  examples: |
+    - I am asking you an out of scope question
+    - five plus two is equal to what
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site 
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm 
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text 
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - ey yo what is happening with you?
+    - Try it out broken
+    - meaning of life
+    - i wanna quit my job
+    - do you like apples?
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 8n
+    - i want to eat
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is the MD of samsung
+    - zxcvbnmped
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will answer my email?
+
+- intent: ask_howold
+  examples: |
+    - how old will you be this year?
+    - how old?
+    - whats your age?
+    - whats your birth year?
+    - when is your birthday?
+    - when were you born?
+    - how old are you now
+    - What's your age?
+
+- intent: meeting
+  examples: |
+    - nice meeting you
+    - it is a pleasure meeting you 
+    - good to see you
+    - good morning
+    - good evening
+    - good afternoon
+    - nice to meet you
+    - lovely meeting you
+    - good to meet you
+    - hi
+    - hi
+    - hello
+    - hey
+    - whats up?
+
+- intent: ask_name
+  examples: |
+    - hi, who are you
+    - who the hell are you?
+    - what is your name
+    - hey what is your name?
+    - what are you?
+    - people call you as
+    - what do they call you
+    - your name?
+    - yo, tell me your name
+    - hello, what's your name
+    - what is you name
+    

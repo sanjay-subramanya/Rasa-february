@@ -1,0 +1,35 @@
+
+recipe: default.v1
+
+language: en
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "rasa/LaBSE"
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: LexicalSyntacticFeaturizer
+  - name: RegexFeaturizer
+  - name: DIETClassifier
+    epochs: 120
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: out_of_scope
+    scale_loss: false
+    epochs: 10
+
+policies:
+- name: TEDPolicy 
+  max_history: 8
+  constrain_similarities: true
+  epochs: 150
+- name: RulePolicy
+  epochs: 30
+- name: MemoizationPolicy
+  epochs: 50
+  
+

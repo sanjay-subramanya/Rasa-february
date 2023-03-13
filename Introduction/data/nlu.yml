@@ -1,0 +1,316 @@
+version: "3.1"
+
+nlu:
+
+- intent: place
+  examples: |
+    - I live in [Bengaluru](place)  
+    - I from [New Delhi](place)
+    - my native is [New Delhi](place)
+    - my native from [New Delhi](place)
+    - I from [some village](place)
+    - from [village](place) I am coming
+    - [New Delhi](place) village
+    - I am from [Chennai](place)
+    - I coming from [New Delhi](place) village town
+    - I operate in and out of [tokyo](place)
+    - I work in [singapore](place)
+    - I've been living here in [Bengaluru](place)
+    - I am living in [new delhi](place)
+    - I'm from [new delhi](place)
+    - I am from [some mysterious city](place)
+    - i come from [india](place)
+    - I am from [mystery island in the red sea](place)
+    - I am from [russia](place)
+    - [New Delhi](place)
+    - me from [New Delhi](place)
+    - myself from [New Delhi](place)
+    - I in [New Delhi](place)
+    - Me living in [New Delhi](place)
+    - currently living in [New Delhi](place)
+
+- intent: age
+  examples: |
+    - i am [36](age)
+    - i'm [50](age) years old now
+    - My age is [25](age) years
+    - i am [12](age)
+    - [33 years](age) old  
+    - I born in [1998](age)
+    - born in [31st january 1975](age)
+    - my birthday is [23rd march 1975](age)
+    - [22](age) years old
+    - currently [22](age) 
+    
+- intent: long
+  examples: |
+    - i am living here for [2 months](long)
+    - i've been here for almost [5 years](long) years now
+    - been living here for nearly [33](long) years
+    - I shifted here in [1998](long)
+    - I have lived in [Chennai](place) for [28 years](long).
+    - i've been here for give or take [3 months](long)
+    - i decided to move here [3 months ago](long)
+    - i've stuck around since [2005](long)
+    - it has been about [a year](long) since i moved here to [russia](place)
+    - Been living here [2 months](long)
+    - I have lived her for [six months](long)
+    - i have been living here for [four years](long)
+    - [two weeks](long) have passed by so far 
+    - I have  been living in [new delhi](place) for [a few weeks only](long)
+    - I have lived here for [25 years](long) now.
+    - I have lived here for [25 years](long) now.
+    - I came here to this city [8 years](long) ago
+    - I have been living here for around [5 years](long)
+    - Next year, it would be my [20th year](long) here
+    
+- intent: family_intro
+  examples: |
+    - My [father](family_1) works in a [private company](fam_work) and my [mother](family_2) is a [housewife](fam_work)
+    - My [parents](family_1) run a [family business](fam_work) together.
+    - my [mom](family_1) lives with me. my [brother and sister](family_2) are currently working as [engineers](fam_work)
+    - I live with my [parents](family_1) and I have [2 older sisters](family_2)
+    - my [father](family_1) is a [scientist](fam_work) 
+    - I live with my [parents](family_1) and [siblings](family_2) in Chennai. They are [farmers](fam_work)
+    - sure, my [father](family_1) works as a [scientist](fam_work) my [elder sisters](family_2) are [software engineers](fam_work) 
+    - [mom](family_1), [dad](family_2) work as [corporate employees](fam_work)
+    - my [parents](family_1) are working at [teachers association limited](fam_work)
+
+  
+- intent: fav_food
+  examples: |
+    - my favourite food is [gulab jamun](dish)
+    - i love eating [dosa](dish)
+    - my favourite dish is [vxcvpbfsw](dish)   
+    - i love having [special thali](dish)
+    - [noodles and other Asian dishes](dish) is my favorite thing now
+    - [pizza](dish) is my favourite
+    - i love [abcd](dish) items here
+    - Yes, you can try [biryani and idli](dish) here. Both are very famous
+    - The most famous food in [new york](place) would be [pizza](dish)
+    - [pizza and burger](dish) are famous here
+    - The famous foods here are [noodles and dumplings](dish)
+    - The most iconic and popular food here is [dosa](dish)
+    - try the [noodles and dumplings](dish) they are famous here
+    - I would say that [noodles and dumplings](dish) are popular here in [singapore](place)
+    - i love [abcdef](dish) cuisine
+    - [Japanese and Italian](dish) cuisine and food dishes are the best
+    
+
+- intent: visit
+  examples: |
+    - My favourite places to visit are the [beaches and museums](visit)
+    - I would recommend to visit the [beaches and museums](visit)
+    - my favourite places are the [temples and the surrounding hills](visit)
+    - I would love to suggest you to go to the [beaches and museums](visit)
+    - I like going to [temples and the surrounding hills](visit)
+    - you should definitely visit [fort and hotels](visit)
+    - go and visit [fort and temples](visit)
+    - I love going to watch [movies and theatrial performances](visit) in [delhi](place)
+    - [new delhi](place) is actually quite popular for [food, fashion and art](place)
+    - My favourite places in [Chennai](place) are the [beaches and museums](visit)
+    - you can definitely go and see the [beaches and museums](visit) in [Chennai](place)
+    - please go to [beaches and museums](visit)
+    
+
+- intent: sibling
+  examples: |
+    - Yes, I have [one younger sister](sibling).
+    - Yes, I have [two younger brothers](sibling).
+    - I have [one younger sister and one older brother](sibling).
+    - I have [two sisters](sibling) who are 4 years older than me.
+    - Yeah, an [older sister](sibling).
+    - one [younger brother](sibling) who is five years younger.
+    - I don't have any siblings
+    - No siblings here
+    - I am the youngest of [4 children](sibling)
+    - I am the eldest of [5 siblings](sibling)
+    - I am the only child
+    - I'm an only child
+
+- intent: goodbye
+  examples: |
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a real person?
+    - are you real person or chat bot?
+    - So I'm here Today to ask one very simple question, what are you ?
+    - you sound like a real human
+    - wow you sound like real human
+    - are you human ?
+
+
+- intent: out_of_scope
+  examples: |
+    - I am asking you an out of scope question
+    - five plus two is equal to what
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site 
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm 
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text 
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - ey yo what is happening with you?
+    - Try it out broken
+    - meaning of life
+    - i wanna quit my job
+    - do you like apples?
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 8n
+    - i want to eat
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is the MD of samsung
+    - zxcvbnmped
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will answer my email?
+
+- intent: ask_howold
+  examples: |
+    - how old will you be this year?
+    - how old?
+    - whats your age?
+    - whats your birth year?
+    - when is your birthday?
+    - when were you born?
+    - how old are you now
+    - What's your age?
+
+- intent: meeting
+  examples: |
+    - nice meeting you
+    - it is a pleasure meeting you 
+    - good to see you too
+    - good morning
+    - Hello jay, it is nice to meet you
+    - Hi, nice to meet you
+    - good evening
+    - good afternoon
+    - nice to meet you
+    - lovely meeting you
+    - good to meet you too
+    - hi
+    - hello
+    - hey
+    - whats up?
+
+- intent: ask_name
+  examples: |
+    - hi, who are you
+    - who the hell are you?
+    - what is your name
+    - hey what is your name?
+    - what are you?
+    - people call you as
+    - what do they call you
+    - your name?
+    - yo, tell me your name
+    - hello, what's your name
+    - what is you name
+    

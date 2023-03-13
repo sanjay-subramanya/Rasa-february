@@ -1,0 +1,36 @@
+version: "3.1"
+
+stories:
+
+- story: start path 1 
+  steps:
+  - intent: meeting
+  - action: utter_ask_place
+  - intent: place  
+  - slot_was_set:
+    - place: None
+  - action: utter_how_long
+  - intent: long
+  - action: utter_say_visit
+  - intent: visit 
+  - action: utter_say_food
+  - intent: fav_food
+  - action: utter_ask_age
+  - intent: age
+  - action: utter_parents
+  - intent: family_intro
+  - action: utter_siblings
+  - intent: sibling
+  - action: utter_bye
+
+
+- story: extra 1
+  steps:
+  - intent: ask_name 
+  - action: utter_ask_name
+  - intent: ask_howold
+  - action: utter_ask_howold
+  - intent: place
+  - action: utter_how_long
+
+

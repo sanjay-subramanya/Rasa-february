@@ -1,0 +1,320 @@
+version: "3.1"
+
+nlu:
+  
+- intent: study_field
+  examples: |
+    - I have studied [cse engineering](domain)
+    - I have completed my [bcom](domain)
+    - I have already finished studying [commerce and economics](domain)
+    - I am currently doing my [mba](domain)
+    - [electrical engineering](domain) completed
+    - [engineering](domain)
+    - I am doing my [graduation in economics](domain) now
+    - I am pursuing [diploma in physics](domain)
+    - [degree in life sciences](domain)
+  
+- intent: study_field_why
+  examples: |
+    - I picked [bcom](domain) because [I wanted to learn](study_reason)
+    - [mba](domain) is [so vast and i wanted to explore it](study_reason)
+    - because [no other option](study_reason)
+    - i don't have any particular reason
+    - no reason
+    - don't know
+    - I always wanted to [make a difference in the lives of children and education seemed like the perfect way to do that](study_reason).
+    - I picked [bcom](domain) because [I wanted to learn](study_reason)
+    - [mba](domain) is [so vast and i wanted to explore it](study_reason)
+    - because [no other option](study_reason)
+    - i don't have any particular reason
+    - no reason
+    - because I was [interested to be the best](study_reason)
+    - [My sister study same, so I also following](study_reason)
+    - Close to my [village college, only this course is available](study_reason)
+    - School teacher advise me to [study in this field](study_reason)
+    - My family advise
+    - All my friends take same course
+    - I wanted to become [IAS or IPS officer](study_reason)
+    - Law always [I am interested, so I went LLB course](study_reason)
+    - I love to share my [knowledge and help students to grow](study_reason).
+    - I like it
+    - I love it
+    - there is no reason
+    - I like to [solve problems and study patterns](study_reason)
+    - just because [i always liked research and analysis](study_reason)
+    - i picked it because [I was interested in astronomy](study_reason)
+    - I wanted to [study plants](study_reason), hence I chose it
+    - The best thing about it would be [fun and challenging](study_reason)
+    - [engineering](domain) is really [interesting](study_reason)
+    - it is [amazing and difficult at the same time](study_reason)
+    - i would say that it is [fun and challenging](study_reason) and that is the best thing about it
+    - its pretty [engaging and i get to learn a lot](study_reason)
+    - My best opinion about [mba](domain) is that it [makes us think deeply about the problems faced by an organization](study_reason)
+
+
+- intent: college
+  examples: |
+    - I am going to [Madras University](college)
+    - I have decided to attend [Mysore University college of science](college)
+    - [Madras University](college) is the college I have chosen to attend.
+    - My plan is to study at [Madras University for arts and commerce](college).
+    - I have enrolled at [national engineering college](college) for my degree.
+    - [college of engineering in Madras University](college) is where I will be pursuing my higher education.
+    - [government institute of medicine and pharmacology](domain)
+    - I am a student of [college of engineering affiliated to University of delhi](college)
+    
+- intent: college_trip
+  examples: |
+    - me and my friends went to [ooty](trip_dest)
+    - i once went to [new delhi and agra](trip_dest)
+    - i took a trip to [himalayas by road](trip_dest)
+    - During our 2nd year, we went for an industrial visit to an [IT company](trip_dest)
+    - My most recent trip was the one where i went to [maldives](trip_dest)
+    - Just recently, i visited [zoo and garden](trip_dest)
+    - in college we had been to [mumbai and pune](trip_dest)
+    - when in university, i went to [mumbai and pune](trip_dest) 
+    - our college faculty took us to [Infosys campus](trip_dest) as part of our industrial visit.
+    - i went to [isro campus](trip_dest) for my iv.
+    - during college i had been to [information and innovation park in shanghai](trip_dest)
+    - i have been to [technology and innovation park](trip_dest)
+    - when we were in college, they had taken us to [isro launch pad](trip_dest)
+    - when i was studying in college and university, i had been to [samsung research in new delhi](trip_dest)
+
+- intent: memory
+  examples: |
+    - There are so many happy memories from college, it's hard to pick just one!
+    - college itself was a great happy memory for me
+    - everything has been unforgettable in college.
+    - [Daily roaming with friends](memory) and going college in bus
+    - I do not have any favourite memories from my college days
+    - [Spending time with my close friends and making new friends](memory) is definitely one of my happiest memories from college.
+    - [Participating in extracurricular activities and clubs](memory) was a great way to create merry moments in college.
+    - [Going on a road trip with my college friends during the spring break](memory) is one of my happiest memories.
+    - [Winning a college sports tournament](memory) was an unforgettable and fondest memory for me.
+    - [Graduation day](memory) was one of my favourite memories from college as it marked the completion of my degree.
+    - The moment I [received an academic award for my hard work](memory) in college is one of my most cherished moments.
+    - Attending a college party and [dancing with friends](memory) made for an awesome memory.
+    - My happiest memory from college was [studying abroad and experiencing a new culture](memory)
+    - My happiest memory is when I [won the gold medal for best student](memory)
+    - [Volunteering for a social cause with my college community](memory) was a happy and fulfilling memory.
+    - my fondest memory would be [having food with my friends](memory)
+
+- intent: group
+  examples: | 
+    - Yes, I have been a part of several group projects and events.
+    - I have participated in a few group projects and events during my time in school.
+    - As a student, I have been involved in various group projects and events.
+    - I have collaborated with my classmates on several group projects and events and learnt importance of teamwork
+    - Being a part of group projects and events is a regular occurrence for me.
+    - I attended many hackathons and coding competitions as a team
+    - hackathons and programming competetions
+    - debates, quizzes and sports events I attended as part ofa team
+    - Yes, I have had the opportunity to be involved in many group projects and events.
+    - Group projects and events have been a vital part of my educational experience.
+    - I have enjoyed being a part of group projects and events as it has helped me to develop teamwork and leadership skills.
+    - Yes, I have been involved in group projects and events that have allowed me to work with people from different backgrounds and cultures.
+    - I have actively sought out opportunities to be involved in group projects and events during my time in school.
+    
+- intent: ambition
+  examples: |
+    - I want to become [principal and lead the school to success](ambition).
+    - I want to start my own [business and provide good service to customers](ambition).
+    - I hope to become a [principal and make a positive impact on the school system](ambition)
+    - My goal is to become a [lead developer and manage my own team in the future](ambition).
+    - I hope to specialize in a [certain area of nursing and become a nurse practitioner](ambition).
+    - my ambition is to become a [lead developer and manage my own team in the future](ambition).
+    - I wanting to get [select in government job](ambition)
+    - I looking for [promotion to General Manager and 10 lakhs salary](ambition)
+    - In the next 5 years, I want to [build technology that can make a  difference in the everyday life of people](ambition).
+    - I having ambition to buy [big car and bikes and house](ambition)
+    - my ambitions are to [become number one in music and science](ambition)
+    - I do not plan to study any other courses right now as I want to [gain some work experience first](ambition)
+    - I am looking to build a [self sustaining startup that can provide value to the human kind and take our species to the next level](ambition)
+
+    
+    
+- intent: goodbye
+  examples: |
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a real person?
+    - are you real person or chat bot?
+    - So I'm here Today to ask one very simple question, what are you ?
+    - you sound like a real human
+    - wow you sound like real human
+    - are you human ?
+
+
+- intent: out_of_scope
+  examples: |
+    - I am asking you an out of scope question
+    - five plus two is equal to what
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site 
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm 
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text 
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - ey yo what is happening with you?
+    - Try it out broken
+    - meaning of life
+    - i wanna quit my job
+    - do you like apples?
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 8n
+    - i want to eat
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is the MD of samsung
+    - zxcvbnmped
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will answer my email?
+
+- intent: ask_howold
+  examples: |
+    - how old will you be this year?
+    - how old?
+    - whats your age?
+    - whats your birth year?
+    - when is your birthday?
+    - when were you born?
+    - how old are you now
+    - What's your age?
+
+- intent: meeting
+  examples: |
+    - nice meeting you
+    - it is a pleasure meeting you 
+    - good to see you
+    - good morning
+    - good evening
+    - good afternoon
+    - nice to meet you
+    - lovely meeting you
+    - good to meet you
+    - hi
+    - hello
+    - hey
+    - whats up?
+
+- intent: ask_name
+  examples: |
+    - hi, who are you
+    - who the hell are you?
+    - what is your name
+    - hey what is your name?
+    - what are you?
+    - people call you as
+    - what do they call you
+    - your name?
+    - yo, tell me your name
+    - hello, what's your name
+    - what is you name
+    
